@@ -7,7 +7,7 @@
   </head>
   <body>
     <h1>HTML Tables</h1>
-    <table>
+    <table style="width: 100%; border: 1.5px solid black">
       <caption style="font-weight: bold">
         TABLE
       </caption>
@@ -27,7 +27,7 @@
           <th>Pazar</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody style="border: 1px solid black; padding: 15px; text-align: left">
         <tr>
           <td colspan="2">1</td>
           <!-- <td>2</td> colspandan dolayı kaldırıldı-->
@@ -56,12 +56,75 @@
           <td>21</td>
         </tr>
       </tbody>
-      <tfoot>
+      <tfoot style="border: 1px solid black; padding: 15px; text-align: center">
         <tr>
-            <th colspan="5">TOPLAM</th>
-            <th colspan="2">900</th>
+          <th colspan="5">TOPLAM</th>
+          <th colspan="2">900</th>
         </tr>
       </tfoot>
+    </table>
+
+    <br />
+
+    <table>
+      <tr>
+        <th>İsim</th>
+        <th>Soyisim</th>
+      </tr>
+      <tr>
+        <td>Ahmet</td>
+        <td>Kaya</td>
+      </tr>
+      <tr>
+        <td>Mehmet</td>
+        <td>Yılmaz</td>
+      </tr>
+    </table>
+
+    <br />
+
+    <table>
+      <tr>
+        <th>Ürün Adı</th>
+        <th>Ürün Fiyatı</th>
+      </tr>
+      <tr>
+        <td>Elma</td>
+        <td>$1</td>
+      </tr>
+      <tr>
+        <td>Muz</td>
+        <td>$0.5</td>
+      </tr>
+    </table>
+
+    <br />
+
+    <table style="width: 100%; border: 1px solid black">
+      <tr>
+        <th style="border: 1px solid black; padding: 15px; text-align: left">
+          İsim
+        </th>
+        <th style="border: 1px solid black; padding: 15px; text-align: left">
+          Soyisim
+        </th>
+      </tr>
+      <tr>
+        <td style="border: 1px solid black; padding: 15px; text-align: left">
+          Ahmet
+        </td>
+        <td style="border: 1px solid black; padding: 15px; text-align: left">
+          Kaya
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid black; padding: 15px; text-align: left">
+          Mehmet
+        </td>
+        <td style="border: 1px solid black; padding: 15px; text-align: left">
+          Yılmaz
+        </td>
+      </tr>
     </table>
   </body>
 </html>
