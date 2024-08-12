@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <h1>HTML Forms</h1>
+    <h2>Example</h2>
+    <form>
+      <!-- Form elementlerini gruplamak için kullanıyoruz -->
+      <fieldset>
+        <!-- Başlık vermek için -->
+        <legend>Kişisel:</legend>
+        <div>
+          <label for="fullname">İsim ve Soyisim: </label>
+          <input type="text" id="fullname" />
+        </div>
+        <div>
+          <label for="gender">Cinsiyet: </label>
+          <!-- name'leri aynı olan radio butonlarda gruplama yaparak sadece bir tanesinin seçilmesini sağlar -->
+          <input type="radio" name="gender" value="male" /> Erkek
+          <input type="radio" name="gender" value="female" /> Kadın
+        </div>
+        <div>
+          <label for="birthday">Doğum Tarihi: </label>
+          <input type="date" id="birthday" />
+        </div>
+        <div>
+          <label for="city">Şehir: </label>
+          <select id="id">
+            <option value="">Seçiniz...</option>
+            <optgroup label="Marmara">
+              <option value="İstanbul">İstanbul</option>
+              <option value="Edirne">Edirne</option>
+            </optgroup>
+            <optgroup label="Ege">
+              <option value="İzmir">İzmir</option>
+              <option value="Muğla">Muğla</option>
+            </optgroup>
+            <optgroup label="Akdeniz">
+              <option value="Adana">Adana</option>
+              <option value="Mersin">Mersin</option>
+            </optgroup>
+          </select>
+        </div>
+        <div>
+          <label for="hobies">Hoıbiler: </label>
+          <input type="checkbox" name="hobies[]" value="sport" /> Spor
+          <input type="checkbox" name="hobies[]" value="music" /> Müzik
+          <input type="checkbox" name="hobies[]" value="read" /> Okuma
+          <input type="checkbox" name="hobies[]" value="game" /> Oyun
+        </div>
+        <div>
+          <label for="cv">CV: </label>
+          <input type="file" id="cv" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>İletişim:</legend>
+        <div>
+          <label for="email">Email: </label>
+          <input type="email" id="email" />
+        </div>
+        <div>
+          <label for="phone">Telefon: </label>
+          <input type="tel" id="phone" />
+        </div>
+        <div>
+          <label for="address">Adres: </label>
+          <textarea id="address" rows="5" cols="40"></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Şifre:</legend>
+        <label for="password">Şifre: </label>
+        <input type="password" id="password" />
+      </fieldset>
+      <fieldset>
+        <legend>İşlemler:</legend>
+        <!-- Submit: aynı form içinde bulunan tüm dolu alanları kayıt için gönderir.
+        Reset: aynı form içinde dolu olan tüm alanlar temizler. -->
+        <button type="submit">Kayıt Ol</button>
+        <button type="reset">Temizle</button>
+      </fieldset>
+    </form>
+
+    <h2>HTML Input Types</h2>
+
+    <h3>Input Type Color</h3>
+    <input type="color" />
+
+    <h3>Input Type Number</h3>
+    <!-- Mobil kullanımında normal text fieldına tıklanıldığında tüm klavyeyi açar ancak number olana tıklanıldığında sadece sayıları açar. -->
+    <input type="number" />
+
+    <h3>Input Type Range</h3>
+    <!-- Value ile başlangıç değerini atayabiliriz. -->
+    <input type="range" value="20" max="100" />
+
+    <h3>Input Type Time</h3>
+    <input type="time" />
+
+    <h2>HTML Input Attributes</h2>
+
+    <h3>The <code>value</code> Attribute</h3>
+    <!-- Varsayılan değer vermeye yarar. -->
+    <input type="text" value="John" />
+
+    <h3>The <code>readonly</code> Attribute</h3>
+    <!-- Editlemeye izin vermez, sadece okuma yapılabilir. disabled'tan farkı bu hiçbir zaman değişmez, disabled koşullara göre değişebilir. -->
+    <input type="text" value="Yaşar Can Damlı" readonly />
+
+    <h3>The <code>disabled</code> Attribute</h3>
+    <input type="number" value="28" disabled />
+
+    <h3>The <code>placeholder</code> Attribute</h3>
+    <!-- Kullanıcıya isteiğimiz verinin bir örneğini göstermek için kullanabiliriz. -->
+    <input type="tel" placeholder="+90 (500) 000 00 00" />
+  </body>
+</html>
