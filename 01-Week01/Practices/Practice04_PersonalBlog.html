@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Blog</title>
+    <!-- Dahili CSS ayarları -->
+    <style>
+      /* Yazı tipinin import edilmesi */
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+      body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #fff4e6;
+        margin: 0;
+        padding: 0;
+        color: #333333;
+      }
+
+      header {
+        background-color: #e07a5f;
+        color: #ffffff;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+      }
+
+      nav {
+        margin: 0 auto;
+        padding: 10px 0;
+      }
+
+      nav a {
+        color: #ffffff;
+        text-decoration: none;
+        margin: 15px;
+        font-weight: 700;
+        padding: 3px;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      main {
+        background-color: #ffffff;
+        padding: 20px;
+      }
+
+      section {
+        background-color: #ffebd9;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      img{
+        border-radius: 8px;
+      }
+
+      section img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      article {
+        margin: 20px 0;
+      }
+
+      h2 {
+        color: #d84315;
+      }
+
+      h3 {
+        color: #d84315;
+      }
+
+      h4 {
+        color: #d84315;
+      }
+
+      article ul, article ol {
+        margin: 10px 0;
+        padding-left: 20px;
+      }
+
+      li::marker {
+        color: #d84315;
+        font-weight: bold; 
+      }
+
+      article a {
+        color: #f57c00;
+        text-decoration: none;
+      }
+
+      article a:hover {
+        text-decoration: underline;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- Header bölümü -->
+    <header>
+      <!-- Sayfa ana başlığı -->
+      <h1>Personal Blog by YAŞAR CAN DAMLI</h1>
+      <!-- Navigasyon için örnek linker -->
+      <nav>
+        <a href="#">Main</a>
+        <a href="#">Topics</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+      <!-- Header resmi -->
+      <img src="images/imagesForPractice04/background1.jpg" alt="main" width="100%" height="300" />
+    </header>
+    <!-- Main Bölümü -->
+    <main>
+      <!-- 1. blog yazısı için section -->
+      <section>
+        <!-- 1. blog yazı başlığı -->
+        <h2>How Do I Install Java?</h2>
+        <div>
+          <h3>Download and Install on Windows</h3>
+          <img src="images/imagesForPractice04/download-java-windows.jpg" alt="Download Java on Windows" width="500" height="auto">
+          <article>
+            <p>
+              Java software is both easy and free to download and install. There
+              are two ways to get Java software for Windows:
+            </p>
+            <ul>
+              <li>Online download</li>
+              <li>Offline download</li>
+            </ul>
+            <h4>Online</h4>
+            <p>
+              Manual installation downloads an IFTW (Install From The Web)
+              executable programme file and requires minimal user intervention.
+              When you run this programme it fetches all the necessary files
+              from the web, so you must remain connected to the Internet during
+              installation.
+            </p>
+            <p>
+              Administrator permission is required to install Java software on
+              Microsoft Windows.
+            </p>
+            <p>
+              If you encounter a problem while using the online download option,
+              try the offline download option.
+            </p>
+            <p>
+              <!-- Blog yazısındaki 1. link -->
+              <a href="https://www.java.com/en/download/help/windows_manual_download.html">Instruction to download and install Java software for Windows online</a>
+            </p>
+            <h4>Offline</h4>
+            <p>
+              The offline installation prompts you to download the executable file found on the manual Java download page, which contains all the files necessary to complete the installation at the user's discretion. You do not need to be connected to the Internet during the installation process. The file can also be copied and installed on another computer without an Internet connection.
+            </p>
+            <p>
+              Microsoft Windows'a Java yazılımını yüklemek için yönetici izni gereklidir.
+            </p>
+            <!-- Blog yazısındaki 2. link -->
+            <a href="https://www.java.com/en/download/help/windows_offline_download.html">Instruction to download and install Java software for Windows offline</a>
+          </article>
+        </div>
+
+        <div>
+          <h3>Download and Install on Mac OS X</h3>
+          <img src="images/imagesForPractice04/install-java-macjpg.jpg" alt="Install Java on Mac" width="500" height="auto">
+          <article>
+            <p>
+              Oracle Java can be installed on Mac 10.7.3 or newer. A 64-bit browser (for example Safari) is required to run Oracle Java on a Mac.
+            </p>
+            <!-- Blog yazısındaki 3. link -->
+            <a href="https://www.java.com/en/download/help/mac_install.html">Instructions for downloading and installing Java software for Mac OS X online</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- 2. blog yazısı için section -->
+      <section>
+        <!-- 1. blog yazı başlığı -->
+        <h2>Why should I learn Java?</h2>
+        <img src="images/imagesForPractice04/thinking-java.jpg" alt="Install Java on Mac" width="500" height="auto">
+        <div>
+          <article>
+            <p>
+              We have defined Java as;
+              <ol>
+                <li>A versatile language with many uses</li>
+                <li>A low-level language that is easy to use and quite powerful</li>
+                <li>A language that is not platform dependent</li>
+              </ol>
+              meaning that it can be used by almost any platform or operating system.
+            </p>
+            <p>
+              If all this is not enough to get you thinking about learning Java, you might also consider the following:
+              <ul>
+                <li>
+                  Learning Java means it is easier to find a job. Even if you don't work in a field related to programming or computer science, having a good knowledge of a language like Java can open up many opportunities.
+                </li>
+                <br>
+                <li>
+                  You won't be unemployed. Java developers and programmers are in high demand. If you learn a programming language and can use it effectively, you won't have to worry about finding a job in the future.
+                </li>
+                <br>
+                <li>
+                  It is very easy to learn. There are hundreds of ways to learn Java. It's a popular language with a huge online community. You will be able to find all the resources you need and get support from experienced coders if needed. Although some people argue about the best way to learn Java, there is no single way. Everyone is different, so the best way varies from person to person.
+                </li>
+              </ul>
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- 3. blog yazısı için section -->
+      <section>
+        <!-- 1. blog yazı başlığı -->
+        <h2>What is Java Used For?</h2>
+        <img src="images/imagesForPractice04/what-is-java-used-for.jpg" alt="Install Java on Mac" width="500" height="auto">
+        <div>
+          <article>
+            <p>
+              Now that we have talked about the importance of programming and answered the question of what is Java, it is time to look at its usage areas. As we mentioned above, Java is a versatile language with a large usage area. Some of these usage areas are common while others are quite specific.
+            </p>
+            <p>
+              At the end of 2017, it was estimated that more than 3 billion devices used Java in some way. Since almost every company uses it, the demand for developers is very high. Let's take a look at the main usage areas of Java:
+            </p>
+            <p>
+              <ol>
+                <li>
+                  <h3>Web Application Development</h3>
+                  <p>
+                    Java is one of the languages preferred by back-end developers to develop new web applications. It is flexible, scalable and allows easily maintainable applications. If you don't know what web applications are, don't worry about it, it's a completely different subject.
+                  </p>
+                </li>
+                <li>
+                  <h3>Making Android Application</h3>
+                  <p>
+                    Although other languages are now used by Android application development teams, Java still continues its reign. Android application development was done entirely in Java in the past. You will understand that even in this field alone, the demand for developers is very high.
+                  </p>
+                </li>
+                <li>
+                  <h3>Scientific Applications</h3>
+                  <p>
+                    Java is also used in science to create programmes and data analysis applications. Although it is not as popular as Python in this field, it is worth mentioning.
+                  </p>
+                </li> 
+                <li>
+                  <h3>Trading Bots</h3>
+                  <p>
+                    If you are involved in cryptocurrency trading, stock exchange or forex trading, you have heard of trading bots. When done correctly, they are programmes that allow you to automatically trade at the highest frequencies and bring in a good return over time.
+                  </p>
+                </li>               
+              </ol>
+            </p>
+            <p>
+              As you can see, Java has many usage areas. These are just the tip of the iceberg. In many parts of the world, Java is used by programmers for hundreds of different things.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
