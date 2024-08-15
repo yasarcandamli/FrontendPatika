@@ -1,0 +1,162 @@
+/* Genel Ayarlar */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #2b3a42;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-top: 15px;
+  padding: 20px;
+  color: #2b3a42;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #d4af37;
+}
+
+/* Ana Görsel */
+header img {
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Ana İçerik */
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hizmetler Listesi */
+section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+section ul li {
+  margin-bottom: 20px;
+}
+
+section ul li h3 {
+  font-size: 1.8em;
+  color: #2b3a42;
+  margin-bottom: 10px;
+}
+
+section ul li p {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+/* İletişim Bilgileri */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+/* İletişim Formu */
+form {
+  margin-top: 20px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form input[type="submit"],
+form input[type="reset"] {
+  background-color: #2b3a42;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover {
+  background-color: #d4af37;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  header h2 {
+    font-size: 1.2em;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  header img {
+    height: auto;
+  }
+
+  form input[type="submit"],
+  form input[type="reset"] {
+    width: 48%;
+    margin-right: 2%;
+  }
+
+  form input[type="reset"] {
+    margin-right: 0;
+  }
+}
