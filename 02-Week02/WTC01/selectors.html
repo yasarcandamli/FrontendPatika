@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+    <style>
+      /* Sadece c1 classı */
+      .c1 {
+        padding-left: 8px;
+        border-left: 5px solid orange;
+      }
+
+      /* c2 ve c3 classına aynı anda sahip olanlar */
+      .c2.c3 {
+        padding-left: 8px;
+        border-left: 5px solid blue;
+      }
+
+      /* c4 sınıfı içindeki c5 sınıfı */
+      .c4 .c5 {
+        padding: 1px;
+        border: 3px solid orange;
+      }
+
+      /* Sadece id'si paragraph olan */
+      #paragraph {
+        padding-left: 8px;
+        border-left: 5px solid blueviolet;
+      }
+
+      /* c6 classına sahip olan p etiketi */
+      p.c6 {
+        padding: 1px;
+        border: 3px solid orange;
+      }
+
+      /* p'nin hemen altında bulunan mark etiketleri */
+      p > mark {
+        padding: 1px;
+        border: 3px solid red;
+      }
+
+      /* İçinde href attribute'ü olan her şeyi (tüm a'ları) seçer */
+      [href] {
+        padding-left: 8px;
+        border-left: 5px solid orange;
+      }
+
+      /* İçinde href attribute'ü ve değeri bu şekilde olan her şeyi (tüm a'ları) seçer */
+      [href="https://patika.dev"] {
+        padding-left: 8px;
+        border-left: 5px solid blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Selectors</h1>
+
+    <h2>.class</h2>
+    <p class="c1">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia magni unde
+      ea maxime. Voluptates porro possimus reiciendis ipsa illum ad magnam,
+      eveniet inventore odit nemo atque. Provident ducimus mollitia libero.
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatum
+      placeat.
+    </p>
+
+    <h2>.class1.class2</h2>
+    <p class="c2 c3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+      quibusdam asperiores incidunt quod dolorum ea ut quidem voluptatem
+      voluptate in, dolores sapiente veritatis iure consectetur. Debitis beatae
+      eligendi doloremque? Dicta?
+    </p>
+    <p class="c2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora at
+      mollitia quos omnis distinctio, sequi corporis aperiam saepe.
+      Necessitatibus facere facilis vero minima maiores ducimus, harum
+      reprehenderit fuga. Rem, minus.
+    </p>
+
+    <h2>.class1 .class2</h2>
+    <p class="c4">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil repellat
+      ducimus deserunt dolore, delectus assumenda corrupti nam distinctio
+      <span class="c5">quam fuga id eum tempore </span>consequuntur, eius
+      blanditiis, culpa error sapiente. Hic.
+    </p>
+
+    <h2>#id</h2>
+    <p id="paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae molestiae
+      voluptas ab iste enim quod, debitis ratione exercitationem quia quo labore
+      eum id esse molestias deleniti, sunt tenetur fugiat omnis?
+    </p>
+
+    <h2>element.class</h2>
+    <p class="c6">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+      accusantium expedita necessitatibus dolore similique ullam magnam alias
+      quidem optio quam? Voluptate minima qui accusamus quas dicta molestiae
+      ipsum odio dolores!
+    </p>
+
+    <h2>element>element</h2>
+    <!-- Burada ilk mark'ı span'ın içinde olduğu için almadı -->
+    <p>
+      Lorem ipsum dolor sit
+      <span><mark>amet consectetur adipisicing </mark></span>elit. Beatae nulla
+      nisi quidem eaque cumque animi vero ipsum at corporis dolorem maxime
+      consequatur aspernatur <mark>voluptates placeat </mark>suscipit, quasi in
+      blanditiis! Vero!
+    </p>
+
+    <h2>[attribute]</h2>
+    <p>
+      <a href="https://patika.dev">Patika</a>
+    </p>
+    <p>
+      <a href="https://apple.com">Apple</a>
+    </p>
+
+    <h2>[attribute=value]</h2>
+    <p>
+      <a href="https://patika.dev">Patika</a>
+    </p>
+    <p>
+      <a href="https://apple.com">Apple</a>
+    </p>
+  </body>
+</html>
