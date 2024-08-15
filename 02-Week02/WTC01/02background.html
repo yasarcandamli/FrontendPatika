@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Backgorunds</title>
+    <style>
+      .c1 {
+        background-color: aqua;
+      }
+      .c2 {
+        background-color: chocolate;
+      }
+      .c3 {
+        width: 400px;
+        height: 300px;
+        /* image vermek için url kullanılır. */
+        background-image: url(../../01-Week01/Practices/images/imagesForPractice04/background2.jpg);
+        /* cover: her yerinden biraz kırparak kendi ölçeklendirir. */
+        /* background-size: cover;  */
+        /* repeat'i no-repeat yapmazsak size'ı width ve height ölçülerinin altında kaldığında boşlukları doldurmak için image'i birden fazla kullancaktır. */
+        background-size: 300px 200px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border: 1px solid gray;
+        background-attachment: scroll;
+      }
+
+      .c4 {
+        width: 400px;
+        height: 300px;
+        /* Shorthand'e tüm özellikleri ekleyemiyoruz, ayırt edemeyecektir, özellikle boyut ile ilgili olanları */
+        background: orange
+          url(../../01-Week01/Practices/images/imagesForPractice04/background2.jpg)
+          no-repeat center center;
+        background-size: 300px 200px;
+        border: 1px solid gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Backgorunds</h1>
+
+    <h2>background-color</h2>
+    <p class="c1">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime error
+      odio rerum suscipit tempore consequuntur culpa aliquid? Dolor repellendus
+      tenetur, molestias perspiciatis, enim rem, hic ad maxime a quaerat ipsum.
+    </p>
+    <p class="c2">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto
+      aliquam facilis expedita molestiae ducimus hic quo libero nisi culpa
+      similique asperiores iste perspiciatis modi veritatis, minus ipsum
+      doloribus voluptate ex.
+    </p>
+
+    <h2>background-image</h2>
+    <div class="c3"></div>
+
+    <h2>background</h2>
+    <div class="c4"></div>
+  </body>
+</html>
