@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Pseudo</title>
+    <style>
+      a:hover {
+        color: violet;
+      }
+
+      a:active {
+        color: coral;
+      }
+
+      input:disabled {
+        background-color: lightblue;
+      }
+
+      input:not(.name) {
+        background-color: firebrick !important;
+      }
+
+      li:nth-child(2n) {
+        background-color: bisque;
+      }
+
+      .c1::first-line {
+        color: lightcoral;
+      }
+
+      .c2::before,
+      .c2::after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: cornflowerblue;
+        display: inline-block;
+        border-radius: 10px;
+      }
+
+      .c2::before {
+        margin-right: 5px;
+      }
+
+      .c2::after {
+        margin-left: 5px;
+      }
+
+      ::selection {
+        color: white;
+        background-color: mediumturquoise;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Pseudo</h1>
+    <h2>CSS Pseudo-class</h2>
+
+    <h3>:hover</h3>
+    <p>
+      <a href="#">Bağlantının üzerine gel.</a>
+    </p>
+
+    <h3>:active</h3>
+    <p>
+      <a href="#">Bağlantıya tıkla.</a>
+    </p>
+
+    <h3>:disabled</h3>
+    <input type="text" disabled />
+
+    <h3>:not(selector)</h3>
+    <input type="text" class="name" />
+    <input type="text" />
+
+    <h3>:nth-child(n)</h3>
+    <ul>
+      <li>Adana</li>
+      <li>Mersin</li>
+      <li>İstanbul</li>
+      <li>Ankara</li>
+      <li>Muğla</li>
+      <li>Antalya</li>
+      <li>İzmir</li>
+    </ul>
+
+    <h2>CSS Pseudo-element</h2>
+
+    <h3>::first-line</h3>
+    <p class="c1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aliquam,
+      quis perferendis iste atque et ad ex impedit perspiciatis vel? Saepe
+      voluptas tenetur odio nobis aperiam? Culpa doloribus cum omnis. Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Et officia, repellat ab
+      possimus dignissimos obcaecati, tenetur ratione reprehenderit porro error
+      harum ea adipisci, debitis eos iure dolor doloremque vero libero.
+    </p>
+
+    <h3>::before & ::after</h3>
+    <p class="c2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque odio neque
+      iure assumenda illo possimus itaque molestias doloribus, architecto et
+      unde eum, repellendus beatae nulla! Ab aut error maxime qui! Lorem, ipsum
+      dolor sit amet consectetur adipisicing elit. Delectus tenetur reiciendis
+      dolore sint sapiente at dolorum tempore veniam? Rem facilis minima
+      consectetur! Quisquam, maiores quae officiis atque sunt ab officia.
+    </p>
+
+    <h3>::selection</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+      fugit esse culpa at soluta ea eaque sint tempora eius, dolorem qui animi
+      dolor, delectus nobis nulla fugiat perspiciatis iusto incidunt? Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Quaerat a labore
+      voluptatem minima, vero aliquid veniam! Esse ullam, debitis, laborum iste
+      et ipsum voluptate, enim quam tempora sunt provident! Voluptatem? Laborum
+      esse et nostrum rerum! Nihil numquam soluta molestiae asperiores enim
+      quaerat nulla ipsam, blanditiis similique. Nobis voluptate architecto
+      accusamus. Quos vel provident odio labore ducimus commodi incidunt dolore
+      voluptates.
+    </p>
+  </body>
+</html>
