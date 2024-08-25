@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  color: antiquewhite;
+  margin: 0;
+  padding: 0;
+  font-size: 1.4em;
+}
+#page-title {
+  margin: 0;
+  padding: 40px;
+}
+#nav {
+  display: flex;
+  gap: 30px;
+  padding: 0 40px 40px 40px;
+}
+.nav-item {
+  color: antiquewhite;
+  text-decoration: none;
+}
+.citation {
+  text-align: justify;
+  width: 600px;
+  height: auto;
+  padding-left: 40px;
+  margin-top: 80px;
+  line-height: 1.4;
+}
+.background-image {
+  width: 100%;
+  height: auto;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Vasily_Perov_-_%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%A4.%D0%9C.%D0%94%D0%BE%D1%81%D1%82%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_-_Google_Art_Project.jpg/819px-Vasily_Perov_-_%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%A4.%D0%9C.%D0%94%D0%BE%D1%81%D1%82%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_-_Google_Art_Project.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#section1,
+#section2 {
+  width: 35%;
+  margin: 100px;
+  padding: 40px;
+  text-align: justify;
+  background-color: rgb(128, 128, 128, 0.3);
+  line-height: 1.4;
+  border-radius: 10px;
+}
+#section2 {
+  margin-left: auto;
+}
+#footer {
+  background-color: rgb(128, 128, 128, 0.4);
+  display: flex;
+  margin-bottom: 0;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  border-radius: 10px;
+}
