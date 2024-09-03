@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS - Grid</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="p-8">
+    <h1 class="text-4xl font-bold">Tailwind CSS - Grid</h1>
+    <h2 class="text-2xl font-medium mt-4 mb-2">grid-cols-*</h2>
+    <div class="grid grid-cols-3 gap-4 text-white text-center">
+
+        <div class="p-4 shadow rounded bg-cyan-500 border">01</div>
+        <div class="p-4 shadow rounded bg-cyan-500 border">02</div>
+        <div class="p-4 shadow rounded bg-cyan-500 border">03</div>
+
+        <div class="p-4 shadow rounded bg-cyan-500 border">04</div>
+        <div class="p-4 shadow rounded bg-cyan-500 border">05</div>
+        <div class="p-4 shadow rounded bg-cyan-500 border">06</div>
+
+        <div class="p-4 shadow rounded bg-cyan-500 border">07</div>
+        <div class="p-4 shadow rounded bg-cyan-500 border">08</div>
+        <div class="p-4 shadow rounded bg-cyan-500 border">09</div>
+    </div>
+
+    <h2 class="text-2xl font-medium mt-4 mb-2">grid-rows-*</h2>
+    <div class="grid grid-rows-3 grid-flow-col gap-4 text-white text-center">
+
+        <div class="p-4 shadow rounded bg-pink-500 border">01</div>
+        <div class="p-4 shadow rounded bg-pink-500 border">02</div>
+        <div class="p-4 shadow rounded bg-pink-500 border">03</div>
+
+        <div class="p-4 shadow rounded bg-pink-500 border">04</div>
+        <div class="p-4 shadow rounded bg-pink-500 border">05</div>
+        <div class="p-4 shadow rounded bg-pink-500 border">06</div>
+
+        <div class="p-4 shadow rounded bg-pink-500 border">07</div>
+        <div class="p-4 shadow rounded bg-pink-500 border">08</div>
+        <div class="p-4 shadow rounded bg-pink-500 border">09</div>
+    </div>
+
+    <h2 class="text-2xl font-medium mt-4 mb-2">col-span-*</h2>
+    <div class="grid grid-cols-3 gap-4 text-white text-center">
+
+        <div class="p-4 shadow rounded bg-cyan-300 border">01</div>
+        <div class="p-4 shadow rounded bg-cyan-300 border">02</div>
+        <div class="p-4 shadow rounded bg-cyan-300 border">03</div>
+        <div class="p-4 shadow rounded bg-cyan-500 border col-span-2">04</div>
+        <div class="p-4 shadow rounded bg-cyan-300 border">05</div>
+        <div class="p-4 shadow rounded bg-cyan-300 border">06</div>
+        <div class="p-4 shadow rounded bg-cyan-500 border col-span-2">07</div>
+    </div>
+
+    <h2 class="text-2xl font-medium mt-4 mb-2">row-span-*</h2>
+    <div class="grid grid-rows-3 grid-flow-col gap-4 text-white text-center">
+
+        <div class="p-4 shadow rounded bg-pink-300 border">01</div>
+        <div class="p-4 shadow rounded bg-pink-300 border">02</div>
+        <div class="p-4 shadow rounded bg-pink-300 border">03</div>
+        <div class="p-4 shadow rounded bg-pink-500 border row-span-2">04</div>
+        <div class="p-4 shadow rounded bg-pink-300 border">05</div>
+        <div class="p-4 shadow rounded bg-pink-300 border">06</div>
+        <div class="p-4 shadow rounded bg-pink-500 border row-span-2">07</div>
+    </div>
+
+    <h2 class="text-2xl font-medium mt-4 mb-2">gap-*</h2>
+    <div class="grid grid-cols-3 gap-1 text-white text-center">
+
+        <div class="p-4 shadow rounded bg-purple-500 border">01</div>
+        <div class="p-4 shadow rounded bg-purple-500 border">02</div>
+        <div class="p-4 shadow rounded bg-purple-500 border">03</div>
+        <div class="p-4 shadow rounded bg-purple-500 border">04</div>
+        <div class="p-4 shadow rounded bg-purple-500 border">05</div>
+        <div class="p-4 shadow rounded bg-purple-500 border">06</div>
+    </div>
+
+    <h2 class="text-2xl font-medium mt-4 mb-2">justify-items-[start, center, end...]</h2>
+    <div class="grid grid-cols-3 gap-1 text-white text-center">
+        <div class="grid rounded bg-gray-200 justify-items-start">
+            <div class="size-14 rounded shadow bg-fuchsia-500 flex items-center justify-center">01</div>
+        </div>
+        <div class="grid rounded bg-gray-200 justify-items-center">
+            <div class="size-14 rounded shadow bg-fuchsia-500 flex items-center justify-center">02</div>
+        </div>
+        <div class="grid rounded bg-gray-200 justify-items-end">
+            <div class="size-14 rounded shadow bg-fuchsia-500 flex items-center justify-center">03</div>
+        </div>
+        <div class="grid rounded bg-gray-200 justify-items-center">
+            <div class="size-14 rounded shadow bg-fuchsia-500 flex items-center justify-center">01</div>
+        </div>
+        <div class="grid rounded bg-gray-200 justify-items-center">
+            <div class="size-14 rounded shadow bg-fuchsia-500 flex items-center justify-center">02</div>
+        </div>
+        <div class="grid rounded bg-gray-200 justify-items-center">
+            <div class="size-14 rounded shadow bg-fuchsia-500 flex items-center justify-center">03</div>
+        </div>
+    </div>
+
+    <h2 class="text-2xl font-medium mt-4 mb-2">justify-self-[start, center, end...]</h2>
+    <div class="grid grid-cols-3 gap-4 text-white text-center">
+        <div class="p-4 shadow rounded bg-pink-300">01</div>
+        <div class="shadow rounded bg-pink-300 grid">
+            <div class="bg-pink-500 shadow rounded p-4 justify-self-center">02</div>
+        </div>
+        <div class="p-4 shadow rounded bg-pink-300">03</div>
+        <div class="p-4 shadow rounded bg-pink-300">04</div>
+        <div class="p-4 shadow rounded bg-pink-300">05</div>
+        <div class="p-4 shadow rounded bg-pink-300">06</div>
+    </div>
+</body>
+
+</html>
