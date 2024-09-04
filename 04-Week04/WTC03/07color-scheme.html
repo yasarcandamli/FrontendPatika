@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS - Color Scheme</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gary-50 dark:bg-gray-950">
+    <main class="container mx-auto p-6">
+        <h1 class="text-4xl font-bold text-gray-950 dark:text-gray-50 mb-6 px-4">Pages</h1>
+        <div class="flex gap-x-4">
+            <div class="flex-auto">
+                <h3 class="text-2xl font-bold text-gray-950 dark:text-gray-50 mb-6 px-4">HTML</h3>
+                <nav class="flex flex-col">
+                    <a href="/01-Week01/WTC02/01textFormatting.html">HTML Text Formatting</a>
+                    <a href="/01-Week01/WTC02/02links.html">HTML links</a>
+                    <a href="/01-Week01/WTC02/03images.html">HTML Images</a>
+                    <a href="/01-Week01/WTC02/04favicon.html">HTML Favicon</a>
+                    <a href="/01-Week01/WTC02/05tables.html">HTML Tables</a>
+                    <a href="/01-Week01/WTC02/06nestedTables.html">HTML Nested Tables</a>
+                    <a href="/01-Week01/WTC03/07lists.html">HTML Lists</a>
+                    <a href="/01-Week01/WTC03/08iframe.html">HTML IFrame</a>
+                    <a href="/01-Week01/WTC03/09semantic-elemets.html">HTML Semantic Elements</a>
+                    <a href="/01-Week01/WTC03/10forms.html">HTML Forms</a>
+                    <a href="/01-Week01/WTC03/11SimpleFormCreationExample.html">HTML Simple Form Creation Example</a>
+                </nav>
+            </div>
+
+            <div class="flex-auto">
+                <h3 class="text-2xl font-bold text-gray-950 dark:text-gray-50 mb-6 px-4">CSS</h3>
+                <nav class="flex flex-col">
+                    <a href="../../02-Week02/WTC01/01selectors.html">CSS Selectors</a>
+                    <a href="../../02-Week02/WTC01/02background.html">CSS Backgrounds</a>
+                    <a href="../../02-Week02/WTC02/03borders.html">CSS Borders</a>
+                    <a href="../../02-Week02/WTC02/04margins.html">CSS Margins</a>
+                    <a href="../../02-Week02/WTC02/05paddings.html">CSS Paddings</a>
+                    <a href="../../02-Week02/WTC02/06sizes.html">CSS Sizes</a>
+                    <a href="../../02-Week02/WTC03/07outline.html">CSS Outline</a>
+                    <a href="../../02-Week02/WTC03/08text.html">CSS Text</a>
+                    <a href="../../02-Week02/WTC03/09fonts.html">CSS Fonts</a>
+                    <a href="../../02-Week02/WTC03/10icons.html">CSS Icons</a>
+                    <a href="../../02-Week02/WTC03/11links.html">CSS Links</a>
+                    <a href="../../02-Week02/WTC03/12lists.html">CSS Lists</a>
+                    <a href="../../02-Week02/WTC03/13tables.html">CSS Tables</a>
+                    <a href="../../02-Week02/WTC04/14display.html">CSS Layout: Display</a>
+                    <a href="../../02-Week02/WTC04/15position.html">CSS Layout: Position</a>
+                    <a href="../../02-Week02/WTC04/16z-index.html">CSS Layout: The z-index Property</a>
+                    <a href="../../02-Week02/WTC04/17overflow.html">CSS Layout: Overflow</a>
+                    <a href="../../02-Week02/WTC05/18pseudo.html">CSS Pseudo</a>
+                    <a href="../../02-Week02/WTC05/19opacity.html">CSS Opacity</a>
+                    <a href="../../02-Week02/WTC05/20shadow.html">CSS Shadow</a>
+                    <a href="../../02-Week02/WTC05/21functions.html">CSS Functions</a>
+                    <a href="../../02-Week02/WTC05/22transforms.html">CSS Transforms</a>
+                </nav>
+            </div>
+
+            <div class="flex-auto">
+                <h3 class="text-2xl font-bold text-gray-950 dark:text-gray-50 mb-6 px-4">Tailwind CSS</h3>
+                <nav class="flex flex-col">
+                    <a href="../../04-Week04/WTC01/01colors.html">Tailwind CSS Colors</a>
+                    <a href="../../04-Week04/WTC01/02shadows.html">Tailwind CSS Shadows</a>
+                    <a href="../../04-Week04/WTC02/03grid.html">Tailwind CSS Grid</a>
+                    <a href="../../04-Week04/WTC02/04flex.html">Tailwind CSS Flex</a>
+                    <a href="../../04-Week04/WTC03/05typography.html">Tailwind CSS Typography</a>
+                    <a href="../../04-Week04/WTC03/06pseudo.html">Tailwind CSS Pseudo</a>
+                    <a href="../../04-Week04/WTC03/07color-scheme.html">Tailwind CSS Color Scheme</a>
+                </nav>
+            </div>
+        </div>
+    </main>
+    <script>
+        var links = document.querySelectorAll('nav > a')
+        for (var link of links) {
+            link.classList = 'px-4 py-2 rounded text-sm text-gray-600 dark:hover:text-gray-50 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-800'
+        }
+    </script>
+</body>
+
+</html>
