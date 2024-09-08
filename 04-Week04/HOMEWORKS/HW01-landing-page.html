@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS - Responsive Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="px-48 pt-8 bg-zinc-200 text-gray-600">
+    <header class="bg-zinc-50 p-4">
+        <nav class="flex justify-between items-center">
+            <div class="logo flex justify-items-start">
+                <svg class="text-violet-500" width="35" height="35" viewBox="0 0 100 100"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="50,5 93,25 93,75 50,95 7,75 7,25" stroke="currentcolor" stroke-width="4"
+                        fill="none" />
+                    <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-size="75"
+                        font-family="Arial" fill="currentcolor">C</text>
+                </svg>
+            </div>
+            <div class="links flex justify-items-end items-center gap-6">
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <button class="bg-violet-500 text-white px-4 py-2 rounded" type="button">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="mt-10">
+            <div class="grid grid-cols-12 gap-8 h-auto">
+                <div class="col-span-4 bg-zinc-50 p-16 flex flex-col items-center justify-center text-center">
+                    <p class="text-violet-500 text-lg font-bold">
+                        Mamba design system
+                    </p>
+                    <h1 class="text-6xl font-bold text-black mt-4">Build it with Mamba</h1>
+                    <p class="mt-8 text-lg">
+                        <span class="font-bold">Modular and versatile.</span> The ultimate design toolkit for savvy
+                        technology startups.
+                    </p>
+                    <form class="w-full mt-10 mb-20" action="#">
+                        <input class="bg-white w-full" type="text" name="name" id="name" placeholder="Your name">
+                        <input class="bg-white w-full mt-3" type="email" name="email" id="email"
+                            placeholder="Email address">
+                        <input class="bg-violet-500 text-white w-full mt-3 rounded py-2" type="submit"
+                            value="Join the waitlist">
+                    </form>
+                </div>
+                <div class="col-span-8 flex items-center">
+                    <img class="w-full h-auto" src="https://picsum.photos/seed/picsum/2200/1200" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-24 flex flex-col items-center justify-center text-center">
+            <p class="text-violet-500 text-lg font-bold tracking-wider">HOW IT WORKS</p>
+            <h1 class="text-6xl font-bold text-black mt-4">Build with Mamba is simple</h1>
+        </div>
+
+        <div class="grid grid-cols-12 gap-4 mt-24">
+            <!-- İlk Kol -->
+            <div class="col-span-4 flex">
+                <div class="bg-zinc-50 text-xl mx-2 p-6 flex flex-col justify-between w-full">
+                    <div class="flex flex-col">
+                        <h2
+                            class="w-12 h-12 bg-violet-500 text-white font-bold text-black rounded-full flex items-center justify-center text-2xl">
+                            1
+                        </h2>
+                        <p class="mt-4">
+                            <span class="font-bold">Nulla.</span> ipsum dolor sit amet consectetur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- İkinci Kol -->
+            <div class="col-span-4 flex">
+                <div class="bg-zinc-50 text-xl mx-2 p-6 flex flex-col justify-between w-full">
+                    <div class="flex flex-col">
+                        <h2
+                            class="w-12 h-12 bg-violet-500 text-white font-bold text-black rounded-full flex items-center justify-center text-2xl">
+                            2
+                        </h2>
+                        <p class="mt-4">
+                            <span class="font-bold">Accussantium.</span> Lorem ipsum, dolor sit amet consectetur
+                            adipisicing elit. Eos, delectus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Üçüncü Kol -->
+            <div class="col-span-4 flex">
+                <div class="bg-zinc-50 text-xl mx-2 p-6 flex flex-col justify-between w-full">
+                    <div class="flex flex-col">
+                        <h2
+                            class="w-12 h-12 bg-violet-500 text-white font-bold text-black rounded-full flex items-center justify-center text-2xl">
+                            3
+                        </h2>
+                        <p class="mt-4">
+                            <span class="font-bold">Maxime.</span> ipsum dolor sit amet consectetur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-12 mt-24 gap-8">
+            <div class="col-span-6">
+                <img class="w-full" src="https://picsum.photos/3600/1800/?blur=2" alt="">
+            </div>
+            <div class="col-span-6 bg-white flex flex-col items-center justify-between p-16">
+                <img class="mb-10 w-32 h-32 bg-gray-500 rounded-full" src="#" alt="">
+                <p class="mb-10 text-center font-bold italic">
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, voluptatibus dolore. Lorem ipsum
+                    dolor, sit amet consectetur adipisicing elit. Consequuntur suscipit quo sunt."
+                </p>
+                <p class="text-center">
+                    Leroy Jenkins
+                    <br>
+                    CEO of Company Co.
+                </p>
+            </div>
+        </div>
+
+        <div class="mt-24 bg-zinc-50 p-16">
+            <h1 class="text-6xl font-bold text-black mb-8">Create with us</h1>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci ducimus, dignissimos consequatur sunt
+                minus quasi magnam animi quas explicabo unde excepturi deserunt ex eligendi molestiae numquam natus quod
+                mollitia exercitationem? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur amet
+                distinctio excepturi consequuntur quibusdam veniam quas beatae tempora eos nihil autem pariatur ullam ex
+                impedit praesentium aspernatur, omnis, sapiente quo?Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Molestias aliquam voluptate similique illum, repellendus aut, facilis quidem rem facere alias
+                temporibus pariatur aliquid repellat sit quasi perspiciatis voluptatem eum libero.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-12 mt-24">
+            <div class="col-span-8">
+                <img class="w-full" src="https://picsum.photos/3600/1800/?blur=2" alt="">
+            </div>
+            <div class="col-span-4 bg-zinc-50 p-10">
+                <p class="bg-violet-500 text-white py-1 px-4 rounded-full inline">Business</p>
+                <div class="flex flex-col h-full pb-10">
+                    <h1 class="text-4xl font-bold text-black mt-4">Curating a workplace that inspires team momvement
+                    </h1>
+                    <p class="mt-auto">
+                        November 30, 2020
+                        <br>
+                        By Leroy Jenkins
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-12 gap-8 mt-8">
+            <!-- İlk Kol -->
+            <div class="col-span-4 flex">
+                <div class="bg-zinc-50 text-xl p-6 flex flex-col justify-between w-full">
+                    <p class="p-10">
+                        <span class="font-bold">Panel-based blocks.</span> Flexible panels that are perfect for building
+                        functional layouts.
+                    </p>
+                </div>
+            </div>
+            <!-- İkinci Kol -->
+            <div class="col-span-4 flex">
+                <div class="bg-zinc-50 text-xl p-6 flex flex-col justify-between w-full">
+                    <p class="p-10">
+                        <span class="font-bold">Responsive design.</span> Panels look great no matter the device.
+                    </p>
+                </div>
+            </div>
+            <!-- Üçüncü Kol -->
+            <div class="col-span-4 flex">
+                <div class="bg-zinc-50 text-xl p-6 flex flex-col justify-between w-full">
+                    <p class="p-10">
+                        <span class="font-bold">Premium support.</span> Join over 50 000 satisfied customers eho use our
+                        templates.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-24">
+            <div class="bg-zinc-50 text-xl p-6 items-center">
+                <h1 class="text-6xl font-bold text-black text-center mt-12">Our team is here to help you.
+                </h1>
+                <p class="mt-4 text-center">
+                    Meet our crew >
+                </p>
+                <img class="px-8 my-16 rounded-lg" src="https://picsum.photos/3000/900/?blur=2" alt="">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="mt-24 mb-0 bg-zinc-50 text-xl p-10 items-center flex">
+            <div class="mr-auto">
+                <p class="font-bold">Mamba</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
