@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS - Review Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-zinc-200 text-gray-800">
+    <header class="bg-zinc-50 px-20 py-5 sticky top-0 z-20 shadow-lg">
+        <nav class="flex justify-between items-center">
+            <div class="links flex gap-2">
+                <a class="px-4 border-b-2 border-gray-300 hover:text-violet-500 hover:border-violet-500 pb-4"
+                    href="#">Link</a>
+                <a class="px-4 border-b-2 border-gray-300 hover:text-violet-500 hover:border-violet-500 pb-4"
+                    href="#">Link</a>
+                <a class="px-4 border-b-2 border-gray-300 hover:text-violet-500 hover:border-violet-500 pb-4"
+                    href="#">Link</a>
+            </div>
+            <div class="logo">
+                <svg class="text-violet-500" width="35" height="35" viewBox="0 0 100 100"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="50,5 93,25 93,75 50,95 7,75 7,25" stroke="currentcolor" stroke-width="4"
+                        fill="none" />
+                    <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-size="75"
+                        font-family="Arial" fill="currentcolor">C</text>
+                </svg>
+            </div>
+            <div class="flex items-center relative">
+                <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                <form action="#">
+
+                    <input class="px-2 pl-10 py-1 mr-2 rounded-1" type="search" name="search" id="search"
+                        placeholder="Search">
+                </form>
+                <button class="bg-violet-500 text-white px-4 py-2 rounded" type="button">Log in</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="grid grid-cols-12 mt-20 text-center">
+            <div class="col-start-5 col-span-4">
+                <h1 class="text-6xl font-bold text-black mt-4 w-full">Lorem ipsum dolor <span
+                        class="text-violet-500">sit
+                        amet</span> consectetur.</h1>
+                <p class="mt-10">Lorem ipsum dolor sit amet?</p>
+                <p class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
+                <div class="flex gap-10 items-center justify-center mt-10">
+                    <a class="bg-violet-500 text-white font-bold px-4 py-2 rounded" href="#">Get started</a>
+                    <a class="font-bold" href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 p-10 mt-20 bg-zinc-50 shadow-lg">
+            <!-- Başlık -->
+            <div class="col-span-2 text-4xl font-bold text-black mt-4 w-full flex flex-col text-center">
+                <h2>What our customers are saying about us</h2>
+            </div>
+
+            <!-- Kart 1 -->
+            <div class="bg-white rounded-lg shadow-lg mt-32 ml-64 mr-24 flex flex-col items-center relative">
+                <!-- İçerik kısmı -->
+                <p class="text-gray-600 text-center mt-16 mx-20 italic font-semibold">
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quibusdam, eligendi
+                    exercitationem molestias possimus facere."
+                </p>
+
+                <!-- Simge kısmı -->
+                <div
+                    class="absolute bottom-20 bg-gray-300 rounded-full h-12 w-12 flex items-center justify-center z-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M12 4v16m8-8H4" />
+                    </svg>
+                </div>
+
+                <!-- Alt Başlık kısmı -->
+                <div class="mt-10 text-center bg-purple-500 w-full rounded-b-lg p-8 relative z-0">
+                    <h3 class="text-lg font-semibold text-white">Distinctio Animi</h3>
+                    <p class="text-purple-200 text-xs">Aliquam Illum</p>
+                </div>
+            </div>
+
+            <!-- Kart 2 -->
+            <div class="bg-white rounded-lg shadow-lg mt-32 mr-64 ml-24 flex flex-col items-center relative">
+                <!-- İçerik kısmı -->
+                <p class="text-gray-600 text-center mt-16 mx-20 italic font-semibold">
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quibusdam, eligendi
+                    exercitationem molestias possimus facere."
+                </p>
+
+                <!-- Simge kısmı -->
+                <div
+                    class="absolute bottom-20 bg-gray-300 rounded-full h-12 w-12 flex items-center justify-center z-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M12 4v16m8-8H4" />
+                    </svg>
+                </div>
+
+                <!-- Alt Başlık kısmı -->
+                <div class="mt-10 text-center bg-purple-500 w-full rounded-b-lg p-8 relative z-0">
+                    <h3 class="text-lg font-semibold text-white">Distinctio Animi</h3>
+                    <p class="text-purple-200 text-xs">Aliquam Illum</p>
+                </div>
+            </div>
+
+            <!-- Kart 3 -->
+            <div class="bg-white rounded-lg shadow-lg mt-8 ml-64 mr-24 flex flex-col items-center relative">
+                <!-- İçerik kısmı -->
+                <p class="text-gray-600 text-center mt-16 mx-20 italic font-semibold">
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quibusdam, eligendi
+                    exercitationem molestias possimus facere."
+                </p>
+
+                <!-- Simge kısmı -->
+                <div
+                    class="absolute bottom-20 bg-gray-300 rounded-full h-12 w-12 flex items-center justify-center z-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M12 4v16m8-8H4" />
+                    </svg>
+                </div>
+
+                <!-- Alt Başlık kısmı -->
+                <div class="mt-10 text-center bg-purple-500 w-full rounded-b-lg p-8 relative z-0">
+                    <h3 class="text-lg font-semibold text-white">Distinctio Animi</h3>
+                    <p class="text-purple-200 text-xs">Aliquam Illum</p>
+                </div>
+            </div>
+
+            <!-- Kart 4 -->
+            <div class="bg-white rounded-lg shadow-lg mt-8 mr-64 ml-24 flex flex-col items-center relative">
+                <!-- İçerik kısmı -->
+                <p class="text-gray-600 text-center mt-16 mx-20 italic font-semibold">
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quibusdam, eligendi
+                    exercitationem molestias possimus facere."
+                </p>
+
+                <!-- Simge kısmı -->
+                <div
+                    class="absolute bottom-20 bg-gray-300 rounded-full h-12 w-12 flex items-center justify-center z-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M12 4v16m8-8H4" />
+                    </svg>
+                </div>
+
+                <!-- Alt Başlık kısmı -->
+                <div class="mt-10 text-center bg-purple-500 w-full rounded-b-lg p-8 relative z-0">
+                    <h3 class="text-lg font-semibold text-white">Distinctio Animi</h3>
+                    <p class="text-purple-200 text-xs">Aliquam Illum</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-12 mt-20 rounded">
+            <div class="col-start-5 col-span-4 p-10 flex flex-col justify-center bg-zinc-50 shadow-lg">
+                <h2 class="text-4xl font-bold text-black mt-4">Contact us</h2>
+                <form class="mt-10" action="#">
+                    <label for="name">Name</label> <br>
+                    <input class="bg-zinc-100 w-full py-2 px-2 rounded" type="text" name="name" id="name"
+                        placeholder="Your name">
+                    <br><br>
+                    <label for="email">E-Mail</label> <br>
+                    <input class="bg-zinc-100 w-full py-2 px-2 rounded" type="email" name="email" id="email"
+                        placeholder="Your email">
+                    <br><br>
+                    <label for="message">Message</label> <br>
+                    <textarea class="bg-zinc-100 w-full py-2 px-2 rounded" name="message" id="message"
+                        placeholder="Message..."></textarea>
+                    <input class="bg-violet-500 text-white font-bold mt-2 w-full py-2 rounded" type="submit"
+                        value="Send">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="px-20 py-10">
+        <div class="flex justify-between items-center text-lg">
+            <div class="font-semibold flex gap-4">
+                <a href="#">Shop</a>
+                <a href="#">About</a>
+                <a href="#">Blog</a>
+                <a href="#">Pricing</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="flex gap-4">
+                <a class="fa-brands fa-instagram bg-violet-500 text-white rounded-full w-12 h-12 flex items-center justify-center"
+                    href="#"></a>
+                <a class="fa-brands fa-pinterest bg-violet-500 text-white rounded-full w-12 h-12 flex items-center justify-center"
+                    href="#"></a>
+                <a class="fa-brands fa-twitter bg-violet-500 text-white rounded-full w-12 h-12 flex items-center justify-center"
+                    href="#"></a>
+                <a class="fa-brands fa-facebook bg-violet-500 text-white rounded-full w-12 h-12 flex items-center justify-center"
+                    href="#"></a>
+                <a class="fa-brands fa-google bg-violet-500 text-white rounded-full w-12 h-12 flex items-center justify-center"
+                    href="#"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
