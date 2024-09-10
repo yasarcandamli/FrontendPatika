@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Conditional Statements</title>
+</head>
+
+<body>
+    <h1>JavaScript - Conditional Statements</h1>
+    <script>
+        /* Comparison Operators */
+        const age = 17;
+        console.group("Comparison Operators");
+
+        console.log(age > 17 ? 'Değer Büyüktür.' : 'Değer Büyük Değildir.');
+        console.log(age < 17 ? 'Değer Küçüktür.' : 'Değer Küçük Değildir.');
+        console.log(age == '17' ? 'Değer Eşittir.' : 'Değer Eşit Değildir.');
+        console.log(age === '17' ? 'Değer ve Tür Eşittir.' : 'Değer ve Tür Eşit Değildir.');
+
+        console.groupEnd();
+
+        /* Logical Operators */
+        const visa = false;
+        const permission = true;
+
+        console.group("Logical Operators");
+
+        if (visa) {
+            if (age >= 18 || permission) {
+                console.log("Türkiye'ye Hoş Geldiniz.")
+            } else {
+                console.log("Ebeveyninizin izni olmadan Türkiye'ye giremezsiniz!")
+            }
+        } else {
+            console.log("Türkiye'ye giremezsiniz!")
+        }
+
+        if ((visa && age >= 18) || (visa && permission)) {
+            console.log("Türkiye'ye Hoş Geldiniz.")
+        } else if ((visa && age < 18) || (visa && !permission)) {
+            console.log("Ebeveyninizin izni olmadan Türkiye'ye giremezsiniz!")
+        } else {
+            console.log("Türkiye'ye giremezsiniz!")
+        }
+
+        console.groupEnd();
+
+        /* If-Statement */
+        const score = 85;
+        if (score >= 90) {
+            console.log("Derece A");
+        } else if (score >= 80) {
+            console.log("Derece B");
+        } else if (score >= 70) {
+            console.log("Derece C");
+        } else if (score >= 60) {
+            console.log("Derece D");
+        } else {
+            console.log("Derece F");
+        }
+
+        /* Switch-Statement */
+        const day = 6;
+        switch (day) {
+            case 1:
+                console.log("Pazartesi");
+                break;
+            case 2:
+                console.log("Salı");
+                break;
+            case 3:
+                console.log("Çarşamba");
+                break;
+            case 4:
+                console.log("Perşembe");
+                break;
+            case 5:
+                console.log("Cuma");
+                break;
+            case 6:
+                console.log("Cumartesi");
+                break;
+            case 7:
+                console.log("Pazar");
+                break;
+            default:
+                console.log("Geçersiz Gün!");
+                break;
+        }
+
+        switch (day) {
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+                console.log("Haftaiçi!");
+                break;
+            case 6:
+            case 7:
+                console.log("Haftasonu!");
+                break;
+            default:
+                console.log("Geçersiz Gün!");
+                break;
+        }
+
+        /* Common Example */
+        const color = "yellow";
+
+        if (color === "red") {
+            console.log("Dur");
+        } else if (color === "yellow") {
+            console.log("Hazırlan");
+        } else if (color === "green") {
+            console.log("Geç");
+        } else {
+            console.log("Geçersiz Renk!");
+        }
+
+        switch (color) {
+            case "red":
+                console.log("Dur");
+                break;
+            case "yellow":
+                console.log("Hazırlan");
+                break;
+            case "green":
+                console.log("Geç");
+                break;
+            default:
+                console.log("Geçersiz Renk!");
+                break;
+        }
+    </script>
+</body>
+
+</html>
