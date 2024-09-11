@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - DOM</title>
+</head>
+
+<body>
+    <h1>JavaScript - DOM</h1>
+    <ul>
+        <li id="html" class="course">HTML</li>
+        <li id="css" class="course">CSS</li>
+        <li id="javascript" class="course">JavaScript</li>
+        <li id="tailwindcss" class="course">Tailwind CSS</li>
+    </ul>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ipsam rerum voluptates amet et eveniet
+        officiis laboriosam obcaecati cupiditate. Labore incidunt officiis exercitationem. Repudiandae eum adipisci
+        dolorum laborum nisi. Facere.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis suscipit molestiae assumenda, eum laudantium
+        eligendi eos illum, obcaecati ipsam eveniet, voluptatibus commodi in.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, optio, autem at fugit fugiat libero nam alias
+        mollitia cum sit possimus, aut minus ipsa quasi dolorem obcaecati veniam dolorum voluptates!
+    </p>
+    <script>
+        console.log(document);
+        console.log(document.documentElement);
+        console.log(document.head);
+        console.log(document.body);
+
+        var body = document.body
+        body.setAttribute('id', 'custom-id');
+        // body.setAttribute('data-uuid', '#123');
+        body.dataset.uuid = '#1234';
+        body.classList.add('custom-class1');
+
+        setTimeout(() => {
+            body.style.backgroundColor = '#F4F4F4'
+        }, 2000);
+
+        /* getElementById */
+        var elementById = document.getElementById('css');
+        if (elementById) {
+            elementById.style.backgroundColor = 'yellow';
+        }
+        console.groupCollapsed('getElementById()');
+
+        console.log(elementById);
+        console.dir(elementById);
+
+        console.groupEnd();
+
+        /* getElementsByClassName */
+        var elementByClassName = document.getElementsByClassName('course');
+        console.groupCollapsed('getElementsByClassName()');
+        console.log(elementByClassName);
+        console.groupEnd();
+
+        /* getElementsByTagName */
+        var elementByTagName = document.getElementsByTagName('p');
+        console.groupCollapsed('getElementsByTagName()');
+        console.log(elementByTagName);
+        console.groupEnd();
+
+        /* querySelector */
+        var querySelector = document.querySelector('.course');
+        console.groupCollapsed('querySelector()');
+        console.log(querySelector);
+        console.groupEnd();
+
+        /* querySelectorAll */
+        var querySelectorAll = document.querySelectorAll('ul > .course');
+        console.group('querySelectorAll()');
+        console.log(querySelectorAll);
+        console.groupEnd();
+    </script>
+</body>
+
+</html>
