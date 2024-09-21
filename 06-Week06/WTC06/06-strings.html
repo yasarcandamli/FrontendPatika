@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Strings</title>
+</head>
+
+<body>
+    <h1>JavaScript - Strings</h1>
+    <script>
+        const text1 = "Yaşar Can Damlı'nın evi.";
+        const text2 = 'Yaşar Can Damlı\'nın evi.';
+        // const instance = new String("Yaşar Can Damlı'nın evi.")
+
+        console.log('text1: ' + text1);
+        console.log('text1.length: ' + text1.length);
+        console.log('text1[0]: ' + text1[0]);
+        console.log('text1.charAt(0): ' + text1.charAt(0));
+        console.log('text1.toUpperCase(): ' + text1.toUpperCase());
+        console.log('text1.toLowerCase(): ' + text1.toLowerCase());
+
+        const text3 = 'Merhaba';
+        const text4 = 'Dünya';
+        console.log('text2.concat(): ' + text3.concat(' ', text4));
+        console.log('text2.slice(): ' + text3.slice(0, 3));
+
+        const text5 = '    Merhaba Dünya!    ';
+        console.log('text5.trim(): ' + text5.trim());
+        console.log('text5.trimLeft(): ' + text5.trimLeft());
+        console.log('text5.trimRight(): ' + text5.trimRight());
+
+        const text6 = '1234';
+        console.log('text5.padStart()', text6.padStart(5, '0'));
+        console.log('text5.padEnd()', text6.padEnd(5, '0'));
+
+        const text7 = 'Merhaba Dünya!';
+        console.log('text7.includes(): ' + text7.includes('Dünya'));
+        console.log('text7.search(): ' + text7.search('Dünya'));
+        console.log('text7.match(): ' + text7.match('Dünya'));
+    </script>
+</body>
+
+</html>
