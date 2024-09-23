@@ -18,7 +18,7 @@ function updateLocalStorage() {
         const isChecked = item.classList.contains('checked');
         tasks.push({ text: taskText, checked: isChecked });
     });
-    
+
     saveTasksToLocalStorage(tasks);
 }
 
@@ -55,7 +55,8 @@ function toggleComplete(event) {
         textSpan.classList.toggle('checked'); // 'span' için checked sınıfını ekle/kaldır
     }
 
-    updateLocalStorage(); // Local Storage'ı güncelle
+    // Local Storage'ı güncelle
+    updateLocalStorage();
 }
 
 // Mevcut tüm liste elemanlarına silme işareti ekleme
@@ -68,7 +69,8 @@ function initializeList() {
 }
 
 // Yeni eleman ekleme fonksiyonu
-function addElement(taskName) {
+function addElement(taskName, isChecked = false) {
+    
     const ul = document.querySelector('#list');
 
     const existingTasks = Array.from(ul.querySelectorAll('.task-text')).map(item => item.textContent);
@@ -91,9 +93,6 @@ function addElement(taskName) {
     }
 
     ul.appendChild(li);
-
-    // Local Storage'a ekle
-    updateLocalStorage();
 }
 
 // Yeni eleman ekleme kontrolü
@@ -104,6 +103,7 @@ function newElement() {
     if (taskName === '') {
         console.log('Listeye boş ekleme yapamazsınız!');
         showToast(false);
+        input.value = '';
     } else {
         addElement(taskName);
         showToast(true);
@@ -114,7 +114,20 @@ function newElement() {
 // Sayfa yüklendiğinde Local Storage'dan görevleri yükle
 function loadTasksFromLocalStorage() {
     const tasks = getTasksFromLocalStorage(); // Local Storage'dan görevleri al
-    tasks.forEach(task => addElement(task.text, task.checked)); // Görevleri listeye ekle
+    tasks.forEach(task => {
+        addElement(task.text, task.checked); // Görevleri listeye ekle
+    });
+
+    // Başlangıçta olan elemanların checked durumunu güncelle
+    const initialItems = document.querySelectorAll('#list li');
+    initialItems.forEach(item => {
+        const taskText = item.querySelector('.task-text').textContent;
+        const matchedTask = tasks.find(task => task.text === taskText);
+        if (matchedTask && matchedTask.checked) {
+            item.classList.add('checked');
+            item.querySelector('.task-text').classList.add('checked');
+        }
+    });
 }
 
 // Sayfa yüklendiğinde görevleri Local Storage'dan yükle
@@ -122,6 +135,3 @@ window.onload = function() {
     loadTasksFromLocalStorage();
     initializeList();
 }
-
-// Başlangıçta mevcut liste elemanlarına silme işareti ekle
-initializeList();
