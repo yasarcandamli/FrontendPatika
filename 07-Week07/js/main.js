@@ -10,4 +10,8 @@
             nextEl: '.swiper-button-next',
         }
     });
+
+    var photos = GLightbox({
+        selector: '#photos .photo'
+    })
 })();
