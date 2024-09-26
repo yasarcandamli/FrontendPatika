@@ -1,4 +1,4 @@
-#ecosystem .content {
+#ecosystem .section-content {
   padding: 65px;
 }
 
@@ -49,4 +49,14 @@
 #ecosystem img {
   width: 100%;
   transition: none;
+}
+
+@media (max-width: 767.98px) {
+  #ecosystem .section-content {
+    padding: 32px;
+  }
+
+  #ecosystem ul h3 {
+    padding: 16px 0;
+  }
 }
