@@ -32,16 +32,45 @@
 // console.log(personName2); //Mehmet
 
 // IIFE (modülün ilkel hali)
-const $ = (function jQuery() {
-    var size = 800;
-    function ajax() {
-        console.log("ajax2222");
-    }
+// const $ = (function jQuery() {
+//     var size = 800;
+//     function ajax() {
+//         console.log("ajax2222");
+//     }
 
-    return {
-        size: size,
-        ajax: ajax
-    }
-})()
+//     return {
+//         size: size,
+//         ajax: ajax
+//     }
+// })()
 
-$.ajax();
+// $.ajax();
+
+// ------------------------------------------------------------------
+
+// DATA TYPES
+// string, number, boolean, undefined => PRIMITIVE TYPES
+// null, object, function => REFERENCE TYPES - NON PRIMITIVE
+
+// let personName = "Yaşar Can";
+// let personAge = 26;
+// let isOverAge = true;
+
+// personName = "Muhammed";
+
+// console.log(personName);
+
+const person = {
+    name: "Yaşar Can",
+    age: 26,
+    isOverAge: true,
+}; // adresi tutar
+
+const person2 = person; // aynı adrese eşitler
+
+person2.name = "Emin"; // aynı adresin özelliğini değiştirir
+
+
+console.log(person.name); // aynı adresin özelliği değişmişti
+
+
