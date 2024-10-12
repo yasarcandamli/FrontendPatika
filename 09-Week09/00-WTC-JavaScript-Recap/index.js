@@ -188,3 +188,19 @@
 // difference -
 
 // ------------------------------------------------------------------
+// DERS 7
+
+// weak comparison ==
+// strong comparison ===
+// and operator &&
+// or operator ||
+// ... spread ***
+// ! not operator
+
+//const clone = structuredClone(original);
+
+// ------------------------------------------------------------------
+// DERS 8
+
+// ... rest ***
+// class ***
