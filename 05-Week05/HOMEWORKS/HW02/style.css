@@ -1,0 +1,68 @@
+:root {
+  --color-1: #2d3d50;
+  --color-2: #3498db;
+  --color-3: #fff;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-1);
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .title {
+  color: var(--color-3);
+  font-size: 3rem;
+  text-align: center;
+}
+.container .drum-image {
+  width: 40%;
+}
+.container .voice-signs {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+  margin-top: 50px;
+  width: 70%;
+}
+.container .voice-signs button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-2);
+  color: var(--color-3);
+  font-size: 1.5rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  border: none;
+  margin: 5px;
+}
+.playing {
+  animation: play-animation 0.1s forwards;
+}
+@keyframes play-animation {
+  0% {
+    transform: scale(1); /* Başlangıç durumu */
+  }
+  50% {
+    transform: scale(1.2); /* Orta durumu (büyüme) */
+  }
+  100% {
+    transform: scale(1); /* Son durum */
+  }
+}
+.container .voice-signs button:active {
+  animation: play-animation 0.1s forwards;
+}
